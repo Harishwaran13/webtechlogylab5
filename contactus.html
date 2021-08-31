@@ -1,0 +1,79 @@
+<!DOCTYPE>
+<html>
+<head>
+
+
+<title>Trading</title>
+
+<link rel ="stylesheet" type="text/css" href="css/normalize.css">
+<link rel ="stylesheet" type="text/css" href="css/contactus.css">
+<link rel ="stylesheet" type="text/css" href="css/global.css">
+
+</head>
+
+<body>
+
+<header>
+		<img id="logo" src="img/logo1.png">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="brands.html">Brands</a>
+      <a href="https://www.musicstores.in/96-arranger-keyboards">Categories</a>
+      <a href="media.html">In Media</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+      <a href="contactus.html">Location</a>
+    </nav>
+
+</header>
+
+
+<section id="slideshow">
+
+		<section id="content">
+
+<center><embed  type="image/png" src="location.png" width="800" height="500"> </center>
+      <center><h1>SPC Music Location</h1>
+
+		<center>	<p>Click the button to get your coordinates.</p>
+
+		<button onclick="getLocation()">Try It</button></center>
+
+		<p id="demo"></p>
+
+		<script>
+		var x = document.getElementById("demo");
+
+		function getLocation() {
+		  if (navigator.geolocation) {
+		    navigator.geolocation.getCurrentPosition(showPosition);
+		  } else {
+		    x.innerHTML = "Geolocation is not supported by this browser.";
+		  }
+		}
+
+		function showPosition(position) {
+		  x.innerHTML = "Latitude: " + position.coords.latitude +
+		  "<br>Longitude: " + position.coords.longitude;
+		}
+		</script>
+
+<p>Everyone scoffed at the sheer audacity of violins being made in India. As far as they were concerned, it was an instrument of western music,<br>
+  and there were places in the world better suited to making such an instrument.<br>
+</p>
+
+		</section>
+
+
+		<img id="slide" src="img/lab3back4.jpg">
+<iframe width="1890" height="840" src="https://www.youtube.com/embed/uoyvXxfU6fo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</section>
+
+  <footer>
+	<center>	<p id="footer"> Copyright 2021. All Rights Reserved. | SPC Music Stores</p></center>
+
+	</footer>
+
+
+</body>
+</html>
